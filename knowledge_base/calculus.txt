@@ -1,0 +1,71 @@
+TOPIC: Calculus
+
+THEOREM: Limits
+Limit Laws:
+lim[f(x) + g(x)] = lim f(x) + lim g(x)
+lim[f(x) * g(x)] = lim f(x) * lim g(x)
+lim[f(x)/g(x)] = lim f(x) / lim g(x), if lim g(x) ≠ 0
+
+Special Limits:
+lim(x->0) sin(x)/x = 1
+lim(x->0) (1 - cos(x))/x = 0
+lim(x->inf) (1 + 1/x)^x = e
+
+THEOREM: L'Hopital's Rule
+If lim f(x)/g(x) gives 0/0 or inf/inf form:
+lim f(x)/g(x) = lim f'(x)/g'(x)
+
+FORMULA: Differentiation Rules
+Power Rule: d/dx [x^n] = n*x^(n-1)
+Product Rule: d/dx [f*g] = f'g + fg'
+Quotient Rule: d/dx [f/g] = (f'g - fg') / g^2
+Chain Rule: d/dx [f(g(x))] = f'(g(x)) * g'(x)
+
+Common Derivatives:
+d/dx [sin(x)] = cos(x)
+d/dx [cos(x)] = -sin(x)
+d/dx [tan(x)] = sec^2(x)
+d/dx [e^x] = e^x
+d/dx [ln(x)] = 1/x
+d/dx [a^x] = a^x * ln(a)
+
+THEOREM: Fundamental Theorem of Calculus
+Part 1: d/dx [integral from a to x of f(t) dt] = f(x)
+Part 2: integral from a to b of f(x) dx = F(b) - F(a)
+where F is any antiderivative of f
+
+FORMULA: Integration Rules
+Power Rule: integral x^n dx = x^(n+1)/(n+1) + C, n ≠ -1
+integral 1/x dx = ln|x| + C
+integral e^x dx = e^x + C
+integral sin(x) dx = -cos(x) + C
+integral cos(x) dx = sin(x) + C
+integral sec^2(x) dx = tan(x) + C
+
+Integration by Parts: integral u dv = uv - integral v du
+
+THEOREM: Taylor Series
+f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)^2/2! + f'''(a)(x-a)^3/3! + ...
+Maclaurin series (a=0):
+e^x = 1 + x + x^2/2! + x^3/3! + ...
+sin(x) = x - x^3/3! + x^5/5! - ...
+cos(x) = 1 - x^2/2! + x^4/4! - ...
+
+FORMULA: Critical Points and Optimization
+f'(x) = 0 at critical points
+Second Derivative Test:
+- f''(x) > 0: local minimum
+- f''(x) < 0: local maximum
+- f''(x) = 0: inconclusive
+
+THEOREM: Mean Value Theorem
+If f is continuous on [a,b] and differentiable on (a,b),
+then there exists c in (a,b) such that:
+f'(c) = (f(b) - f(a)) / (b - a)
+
+FORMULA: Area Between Curves
+Area = integral from a to b of |f(x) - g(x)| dx
+
+FORMULA: Related Rates
+Differentiate both sides of an equation with respect to time t.
+Use chain rule for all variables that depend on t.

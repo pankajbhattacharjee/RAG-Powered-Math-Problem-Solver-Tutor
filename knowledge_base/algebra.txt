@@ -1,0 +1,51 @@
+TOPIC: Algebra
+
+THEOREM: Quadratic Formula
+If ax^2 + bx + c = 0, then x = (-b ± sqrt(b^2 - 4ac)) / (2a)
+The discriminant D = b^2 - 4ac determines the nature of roots:
+- D > 0: two distinct real roots
+- D = 0: one repeated real root
+- D < 0: two complex conjugate roots
+
+THEOREM: Binomial Theorem
+(a + b)^n = sum from k=0 to n of C(n,k) * a^(n-k) * b^k
+where C(n,k) = n! / (k! * (n-k)!)
+
+FORMULA: Factoring Identities
+a^2 - b^2 = (a+b)(a-b)  [Difference of squares]
+a^3 - b^3 = (a-b)(a^2 + ab + b^2)  [Difference of cubes]
+a^3 + b^3 = (a+b)(a^2 - ab + b^2)  [Sum of cubes]
+(a+b)^2 = a^2 + 2ab + b^2
+(a-b)^2 = a^2 - 2ab + b^2
+
+FORMULA: Logarithm Rules
+log(ab) = log(a) + log(b)
+log(a/b) = log(a) - log(b)
+log(a^n) = n*log(a)
+log_b(x) = ln(x) / ln(b)  [Change of base]
+log_b(b) = 1
+log_b(1) = 0
+
+THEOREM: Arithmetic Progression (AP)
+nth term: a_n = a + (n-1)d
+Sum of n terms: S_n = n/2 * (2a + (n-1)d) = n/2 * (first + last)
+where a = first term, d = common difference
+
+THEOREM: Geometric Progression (GP)
+nth term: a_n = a * r^(n-1)
+Sum of n terms: S_n = a*(r^n - 1)/(r - 1) for r ≠ 1
+Sum of infinite GP: S = a/(1-r) for |r| < 1
+where a = first term, r = common ratio
+
+FORMULA: Exponent Rules
+a^m * a^n = a^(m+n)
+a^m / a^n = a^(m-n)
+(a^m)^n = a^(mn)
+(ab)^n = a^n * b^n
+a^0 = 1
+a^(-n) = 1/a^n
+
+THEOREM: Vieta's Formulas
+For ax^2 + bx + c = 0 with roots r1, r2:
+r1 + r2 = -b/a
+r1 * r2 = c/a

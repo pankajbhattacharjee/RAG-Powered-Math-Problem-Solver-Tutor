@@ -1,0 +1,67 @@
+TOPIC: Statistics and Probability
+
+FORMULA: Descriptive Statistics
+Mean: μ = (sum of all values) / n
+Median: middle value when sorted
+Mode: most frequently occurring value
+Variance: σ^2 = sum[(x_i - μ)^2] / n  (population)
+         s^2 = sum[(x_i - x̄)^2] / (n-1)  (sample)
+Standard Deviation: σ = sqrt(variance)
+
+FORMULA: Probability Rules
+P(A or B) = P(A) + P(B) - P(A and B)  [Addition Rule]
+P(A and B) = P(A) * P(B|A)  [Multiplication Rule]
+P(A and B) = P(A) * P(B)  [if A, B independent]
+P(A|B) = P(A and B) / P(B)  [Conditional Probability]
+P(A') = 1 - P(A)  [Complement Rule]
+
+THEOREM: Bayes' Theorem
+P(A|B) = P(B|A) * P(A) / P(B)
+P(B) = sum of P(B|A_i) * P(A_i) for all partitions A_i
+
+FORMULA: Combinations and Permutations
+Permutation: P(n,r) = n! / (n-r)!  [ordered selection]
+Combination: C(n,r) = n! / (r! * (n-r)!)  [unordered selection]
+With repetition combination: C(n+r-1, r)
+
+THEOREM: Binomial Distribution
+P(X = k) = C(n,k) * p^k * (1-p)^(n-k)
+Mean: μ = np
+Variance: σ^2 = np(1-p)
+where n = trials, p = probability of success, k = successes
+
+THEOREM: Normal Distribution
+PDF: f(x) = (1/σ√(2π)) * e^(-(x-μ)^2 / (2σ^2))
+68-95-99.7 Rule:
+- 68% of data within 1 standard deviation of mean
+- 95% within 2 standard deviations
+- 99.7% within 3 standard deviations
+Z-score: z = (x - μ) / σ
+
+THEOREM: Central Limit Theorem
+For large sample size n, the sampling distribution of the mean
+approaches a normal distribution with:
+Mean: μ_x̄ = μ
+Standard Error: σ_x̄ = σ / sqrt(n)
+
+FORMULA: Hypothesis Testing
+Null Hypothesis H0 vs Alternative Hypothesis H1
+p-value: probability of observing result if H0 is true
+Reject H0 if p-value < significance level α (typically 0.05)
+
+FORMULA: Confidence Intervals
+95% CI for mean: x̄ ± 1.96 * (σ/sqrt(n))
+For unknown σ use t-distribution: x̄ ± t*(s/sqrt(n))
+
+FORMULA: Correlation and Regression
+Pearson Correlation: r = Σ[(x_i - x̄)(y_i - ȳ)] / [sqrt(Σ(x_i-x̄)^2) * sqrt(Σ(y_i-ȳ)^2)]
+r ranges from -1 to 1
+Linear Regression: y = mx + b
+Slope: m = r * (s_y / s_x)
+Intercept: b = ȳ - m*x̄
+
+FORMULA: Expected Value
+E(X) = sum of x_i * P(x_i) for discrete
+E(aX + b) = aE(X) + b
+E(X + Y) = E(X) + E(Y)
+Var(X) = E(X^2) - [E(X)]^2
